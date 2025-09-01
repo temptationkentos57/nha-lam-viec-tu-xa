@@ -3,7 +3,8 @@ const config = {
         host: 'localhost',
         user: 'root',
         password: process.env.DB_PASSWORD || '',
-        database: process.env.DB_NAME || 'work_db'
+        database: process.env.DB_NAME || 'work_db',
+        port: process.env.DB_PORT || 3306
     }
 };
 
