@@ -7,6 +7,9 @@ class Project {
     }
 
     updateDetails(title, description) {
+        if (!title || !description) {
+            throw new Error('Title and description cannot be empty.');
+        }
         this.title = title;
         this.description = description;
     }
