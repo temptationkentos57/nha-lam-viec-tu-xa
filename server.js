@@ -5,9 +5,9 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 app.get('/api', (req, res) => {
-    res.json({ message: 'API hoạt động tốt!' });
+    res.json({ message: 'API is working fine!' });
 });
 
 app.listen(PORT, () => {
-    console.log(`Máy chủ API đang chạy trên http://localhost:${PORT}`);
+    console.log(`Server API is running on http://localhost:${PORT}`);
 });
