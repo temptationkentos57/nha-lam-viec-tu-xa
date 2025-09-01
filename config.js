@@ -3,7 +3,7 @@ const config = {
         host: 'localhost',
         user: 'root',
         password: process.env.DB_PASSWORD || '',
-        database: 'nha_lam_viec'
+        database: process.env.DB_NAME || 'nha_lam_viec'
     }
 };
 
